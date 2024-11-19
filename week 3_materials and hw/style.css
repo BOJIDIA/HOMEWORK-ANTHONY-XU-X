@@ -3,7 +3,7 @@
   Try using percentages to have a responsive design when the screen size changes.  */
 
 body {
-  padding: 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 /* TODO: Please take a look at this page: https://css-tricks.com/snippets/css/a-guide-to-flexbox/. 
@@ -11,42 +11,50 @@ body {
   as explained on the README page of this week. */
 .container-flex {
   display: flex;
-  margin: ;
-  gap: ; 
-  flex-flow: ;
-  align-items: ;
-  justify-content: ;
+  margin: 20px;
+  gap: 10px ; 
+  flex-flow: none ;
+  align-items: center ;
+  justify-content: start ;
 }
 
 /* TODO: Please take a look at this page: https://css-tricks.com/snippets/css/a-guide-to-flexbox/. 
   Then try to find appropriate values for the following properties. Make sure you try other values 
   as explained on the README page of this week. */
 .container-flex .flex-item {
-  border: ;
-  flex-basis: ;
+  border-color: blueviolet;
+  border-style: dashed;
+  border-width: 20px;
+  border-height: 20px;
+ flex-basis: 200px;
 }
 
 /* TODO: Have you noticed that the text is too close to the right of each flex-item box? 
   Find a property that can make some spaces there. */
 .item-description ul li {
-  
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 
 /* Table related css rules. Look at the screenshots and try to build the same style. */
 .item-tables {
-  border: ;
+  border: dashed;
+  border-color: blue;
+  border-block-end: 30px;
+  text-decoration: underline ;
 }
 
 .item-tables tr th {
-  border-bottom: ;
+  border-bottom: solid;
 }
 
 .item-tables tr td {
-  border: ;
+  border: dashed ;
 }
 
 /* TODO:  Look at the table's cells carefully, especially the spaces around the texts within each cell. Write appropriate rules that provide some spaces around the text of each cell. */
 .item-tables p {
-
+  margin: 5;
+  padding: 20px
 }
