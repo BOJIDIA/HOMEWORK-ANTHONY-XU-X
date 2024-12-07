@@ -1,0 +1,61 @@
+
+body{
+    background-color: greenyellow;
+    padding: 20px 20px 20px 20px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    background-color: moccasin;
+    padding-top: 1cm;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: "Montserrat Underline", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav, a {
+    border: solid;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}  
+
+section {
+    padding: 10px 5px 10px 5px ;
+    margin: 10pt ;
+    color: rgb(193, 124, 33);
+    background-color: aliceblue;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+li {
+    border: 1cm;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+textarea {
+          height: auto;
+          width: auto;
+}
+
+footer {
+        background-color: aqua;
+        text-align: center;
+        font-family: "Roboto", serif;
+        font-weight: 100;
+        font-style: normal;
+}
