@@ -1,59 +1,61 @@
+from typing import Dict, List
+
+# Difficulties: 
+# Easy -> Should be doable
+# Medium -> Challenging
+# Hard -> I will be happy if you can do these!
+# Extra -> EXTREMELY DIFFICULT
+
+
 # Difficulty: Easy
 def zigzagzip(s1: str, s2: str) -> str:
     """ 
-    Condition: len(s1) == len(s2)
-
-    Combine s1 and s2 by alternating letters, starting with s1[0].
-
-    >>> zigzagzip('abc', '123') -> 'a2c'
-    >.> zigzagzip('abcd', '1234') -> 'a2c4'
-    """
-    result = ""
-    for i, j in zip(s1, s2):
-        result += i + j
-    return result    
-
-    # s1 = "abc"
-    # s2 = "123"
-    # first loop
-    # i -> a
-    # j -> 1
-    # second loop
-    # i -> b
-    # j -> 2
-    # third loop
-    # i ->c
-    # j- >3
+    Precondition: len(s1) == len(s2)
     
-    # a1b2c3
+    Return a string made up of alternating letters from s1 and s2,
+    starting with s1[0], then s2[1], s1[2], and so on
+    
+    >>> zigzagzip('abc', '123')
+    'a2c'
+    >>> zigzagzip('abcd', '1234')
+    'a2c4'
+    """
+    pass  # erase this and write the function body
+
 
 # Difficulty: Easy
-def palindrome(s: str) -> bool:
+def is_palindrome(s: str) -> bool:
+    """Return True if and only if s is a palindrome.
+    >>> is_palindrome('noon')
+    True
+    >>> is_palindrome('racecar')
+    True
+    >>> is_palindrome('dented')
+    False
     """
-    Determine if a string is a palindrome.
+    pass  # erase this and write the function body
 
-    >>> palindrome('noon') -> True
-    >>> palindrome('racecar') -> True
-    >>> palindrome('dented') -> False
-    """ 
-    return s == s[::-1]
-   
 
 # Difficulty: Easy
 def get_num_orders(meal_to_tables: Dict[str, List[int]], meal: str) -> int:
     """
-    Find the number of orders for a specified meal based on table data.
-
-    - m_to_t = {'stew': [4, 1], 'eggs': [6]}
-      get_num_orders(m_to_t, 'stew') -> 2
-      get_num_orders(m_to_t, 'eggs') -> 1
-      get_num_orders(m_to_t, 'brussel sprouts') -> 0
+    Return the number of orders for meal in meal_to_tables. 
+    The values in the dictionary represents table numbers. 
+    For example, {'stew': [4, 1], 'eggs': [6]} means table 4 and 1 ordered stew
+    while table 6 ordered eggs.
+    
+    >>> m_to_t = {'stew': [4, 1], 'eggs': [6]}
+    >>> get_num_orders(m_to_t, 'stew')
+    2
+    >>> get_num_orders(m_to_t, 'eggs')
+    1
+    >>> get_num_orders(m_to_t, 'brussel sprouts')
+    0
     """
-    if meal in meal_to_tables:
-        return len(meal_to_tables[meal])
-    else:
-        return 0
+    pass
 
+
+# Difficulty: Medium
 def get_column(board: List[List[str]], column_num: int) -> List[str]:
     """Return column column_num of board.
     >>> b = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']]
@@ -62,13 +64,8 @@ def get_column(board: List[List[str]], column_num: int) -> List[str]:
     >>> get_column(b, 2)
     ['c', 'f', 'i']
     """
-    result = []
-    for row in board:
-        result.append(row[column_num])
-    return result
+    pass  # erase this and write the function body
 
-    return [row[column_num] for row in board]
-    
 
 
 
@@ -158,5 +155,3 @@ def find_population(continent_info: Dict[str, Dict[str, Dict[str, int]]]) -> Dic
     True
     """
     pass  # erase this and write the function body
-
-
