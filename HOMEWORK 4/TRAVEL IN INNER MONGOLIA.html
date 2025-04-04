@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Travel in Inner Mongolia</h1>
+        <h1 id="welcome-message">Travel in Inner Mongolia</h1>
         <h2>Explore the Wonders of the Grasslands, Desert, and Unique Culture</h2>
     </header>
 
@@ -61,5 +61,24 @@
     <footer>
         <p>&copy; 2024 Explore Inner Mongolia</p>
     </footer>
+    <script>
+        let welcomeMessage = document.getElementById("welcome-message");
+
+        setTimeout(function() {
+            welcomeMessage.innerHTML = "WELCOME";
+        }, 1000);
+        
+        welcomeMessage.onclick = function () {
+            this.innerHTML = "you clicked me:)";
+            this.style.fontFamily = "Stencil";
+        }
+
+        welcomeMessage.onmouseover = function () {
+            this.style.color = "red";
+        }
+        
+
+
+    </script>
 </body>
 </html>
